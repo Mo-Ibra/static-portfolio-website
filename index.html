@@ -20,7 +20,7 @@
 
     <!-- 
     - google font link
-  -->
+    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -37,46 +37,69 @@
 
 </head>
 
-<body class="loaded">
+<body>
 
     <!-- 
     - #PRELOADER
     -->
 
-    <div class="preloader loaded" data-preloader>
-        <div class="circle loaded"></div>
+    <div class="preloader" data-preloader>
+        <div class="circle" data-circle></div>
     </div>
-
-    <section class="container section">
-        <h1>Hello World</h1>
-        <h2>Hello World</h2>
-        <h3>Hello World</h3>
-        <h4>Hello World</h4>
-        <h5>Hello World</h5>
-        <h6>Hello World</h6>
-        <div class="has-before">Hello world</div>
-        <button class="btn has-before">Hello world</button>
-    </section>
-
-    <section>
-        <h2 class="section-subtitle p">Hello World</h2>
-        <h2 class="section-title h1">Hello World</h2>
-        <p class="text-lg">Another Hi</p>
-    </section>
-
-
 
     <!-- 
     - #HEADER
     -->
 
     <header class="header" data-header>
+        <div class="container">
 
+            <a href="./" class="logo">
+                <img src="./assets/images/logo.svg" width="170" height="30" alt="Pfolio">
+            </a>
+
+            <!-- Dark & Light Button -->
+
+            <!-- Open & Close Button -->
+            <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+            </button>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="./" class="navbar-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Resume</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+        </div>
     </header>
-
-
-
-
 
     <!-- 
     - #MAIN
@@ -104,7 +127,7 @@
 
     <!-- 
     - custom js link
-  -->
+    -->
     <script src="./assets/js/script.js"></script>
 
     <!-- 

@@ -320,6 +320,7 @@ body.nav-active {
 
 .preloader .circle.loaded {
     opacity: 0;
+    display: none;
 }
 
 
@@ -329,4 +330,103 @@ body.nav-active {
 
 /*-----------------------------------*\
   #HEADER
+\*-----------------------------------*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--eerie-black);
+    padding-block: 24px;
+    z-index: 4;
+    transition: var(--transition-1);
+}
+
+.header.active {
+    background-color: var(--raisin-black);
+    padding-block: 16px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle-btn {
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    border-radius: var(--radius-circle);
+    display: grid;
+    place-content: center;
+    gap: 8px;
+    transition: var(--transition-1);
+}
+
+.nav-toggle-btn:is(:hover, :focus-visible) { gap: 10px; }
+
+.nav-toggle-btn.active { gap: 8px; }
+
+.nav-toggle-btn .line {
+    width: 25px;
+    height: 2px;
+    background-color: var(--black);
+    transition: var(--transition-1);
+}
+
+.nav-toggle-btn.active .line-1 { transform: rotate(45deg) translate(4px, 4px); }
+
+.nav-toggle-btn.active .line-2 { transform: rotate(-45deg) translate(3px, -2px); }
+
+.navbar {
+    position: absolute;
+    top: 100%;
+    right: -370px;
+    max-width: 370px;
+    width: 100%;
+    background-color: var(--white);
+    height: 100vh;
+    text-align: center;
+    padding: 56px 40px;
+    visibility: hidden;
+    transition: 0.25s var(--cubic-in);
+    z-index: 1;
+}
+
+.navbar.active {
+    /* transform: translateX(-370px); */
+    right: 0;
+    visibility: visible;
+    transition-timing-function: var(--cubic-out);
+}
+
+.navbar-link {
+    color: var(--radius-black);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    padding-block: 10px;
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus-visible) { text-shadow: 1px 0 0 var(--eerie-black); }
+
+.overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.overlay.active { display: block; }
+
+
+
+
+
+/*-----------------------------------*\
+  #HERO
 \*-----------------------------------*/
