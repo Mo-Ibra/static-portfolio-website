@@ -70,27 +70,23 @@
                 <ul class="navbar-list">
 
                     <li>
-                        <a href="./" class="navbar-link">Home</a>
+                        <a href="#home" class="navbar-link">Home</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link">Resume</a>
+                        <a href="#services" class="navbar-link">Services</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link">Services</a>
+                        <a href="#portfolio" class="navbar-link">Portfolio</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link">Portfolio</a>
+                        <a href="#blog" class="navbar-link">Blog</a>
                     </li>
 
                     <li>
-                        <a href="#" class="navbar-link">Blog</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="navbar-link">Contact</a>
+                        <a href="#contact" class="navbar-link">Contact</a>
                     </li>
 
                 </ul>
@@ -111,7 +107,7 @@
             <!-- 
             - #HERO
             -->
-            <section class="section hero" aria-label="home">
+            <section class="section hero" aria-label="home" id="home">
                 <div class="container">
 
                     <div class="hero-content">
@@ -151,7 +147,7 @@
             <!-- 
                 - #SERVICE
             -->
-            <section class="service" aria-labelledby="service-label">
+            <section class="service" aria-labelledby="service-label" id="services">
                 <div class="container">
 
                     <div class="title-wrapper">
@@ -333,7 +329,7 @@
                 - #SKILLS
             -->
 
-            <section class="section skills" aria-label="our skills">
+            <section class="section skills" aria-label="our skills" id="skills">
                 <div class="container">
 
                     <p class="section-subtitle">I Do My Best</p>
@@ -426,7 +422,7 @@
                 - #PORTFOLIO
             -->
 
-            <section class="portfolio" aria-labelledby="portfolio-label">
+            <section class="portfolio" aria-labelledby="portfolio-label" id="portfolio">
 
                 <div class="title-wrapper container">
 
@@ -570,7 +566,96 @@
 
             </section>
 
-            
+
+            <!-- 
+                - #BLOG
+            -->
+
+            <section class="section blog" aria-labelledby="blog-label" id="blog">
+                <div class="container">
+
+                    <p class="section-subtitle" id="blog-label">Recent Articles</p>
+
+                    <h2 class="h2 section-title">Latest News</h2>
+
+                    <ul class="blog-list">
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
+                                    <img src="./assets/images/blog-1.jpg" width="700" height="470" loading="lazy"
+                                        alt="Get Started With Tiktok Ads." class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <time class="time" datetime="2022-06-24">
+                                        <span class="span text-lg">24</span>
+                                        June 2022
+                                    </time>
+
+                                    <div>
+                                        <h3 class="h3 card-title">Get Started With Tiktok Ads.</h3>
+
+                                        <p class="card-text">
+                                            Phasellus et lacus suscipit congue nis in the miss mine one miss the drana
+                                            risus in tincidunt
+                                            ornare.
+                                        </p>
+
+                                        <a href="#" class="btn has-before">
+                                            <span class="span">Read more</span>
+
+                                            <ion-icon name="arrow-forward"></ion-icon>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
+                                    <img src="./assets/images/blog-2.jpg" width="700" height="470" loading="lazy"
+                                        alt="UX in Ecommerce – 5 things to avoid." class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <time class="time" datetime="2022-06-27">
+                                        <span class="span text-lg">27</span>
+                                        June 2022
+                                    </time>
+
+                                    <div>
+                                        <h3 class="h3 card-title">UX in Ecommerce – 5 things to avoid.</h3>
+
+                                        <p class="card-text">
+                                            Phasellus et lacus suscipit congue nis in the miss mine one miss the drana
+                                            risus in tincidunt
+                                            ornare.
+                                        </p>
+
+                                        <a href="#" class="btn has-before">
+                                            <span class="span">Read more</span>
+
+                                            <ion-icon name="arrow-forward"></ion-icon>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
 
         </article>
     </main>
@@ -583,8 +668,62 @@
     - #FOOTER
     -->
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
+        <div class="container">
 
+            <ul class="footer-list">
+
+                <li>
+                    <p class="h4 footer-list-title">Get in touch</p>
+                </li>
+
+                <li>
+                    <a href="mailto:info@kwilliams.com" class="footer-link">info@kwilliams.com</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="h4 footer-list-title">Locations</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">San Francisco — California</a>
+                </li>
+
+            </ul>
+
+            <ul class="social-list">
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-dribbble"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
     </footer>
 
 

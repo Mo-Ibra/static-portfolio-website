@@ -686,13 +686,13 @@ body.nav-active {
 \*-----------------------------------*/
 
 .portfolio .slider {
-    --item-gap: 16px
+    --item-gap: 16px;
 }
 
 .portfolio-card {
     position: relative;
     background-color: transparent;
-    transition: var(--cubic-ease-out)
+    transition: var(--cubic-ease-out);
 }
 
 .portfolio-card .img-cover {
@@ -705,7 +705,9 @@ body.nav-active {
     left: 50%;
     text-align: center;
     width: 100%;
-    transform: translate(-60%, -50%);
+    display: grid;
+    place-content: center;
+    transform: translate(-55%, -50%);
     opacity: 0;
     transition: var(--cubic-ease-out);
     z-index: 1;
@@ -732,3 +734,71 @@ body.nav-active {
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
+
+.blog-list {
+    display: grid;
+    gap: 60px;
+}
+
+.blog-card {
+    display: grid;
+    gap: 40px;
+}
+
+.card-content {
+    display: flex;
+    gap: 16px;
+    padding-inline: 16px;
+}
+
+.blog-card .time {
+    font-size: var(--fs-7);
+}
+
+.blog-card .time .span {
+    color: var(--white);
+    font-weight: var(--fw-700);
+    line-height: 0.9;
+}
+
+.blog-card .card-text {
+    margin-block: 20px;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+    background-color: var(--radius-black);
+    padding-block: 76px;
+}
+
+.footer .container {
+    display: grid;
+    gap: 20px;
+}
+
+.social-list {
+    display: flex;
+    gap: 8px;
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--white_a5);
+    border-radius: var(--radius-circle);
+    color: var(--white);
+    transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus-visible) {
+    border-color: var(--white);
+}
