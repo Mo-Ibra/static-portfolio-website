@@ -802,3 +802,300 @@ body.nav-active {
 .social-link:is(:hover, :focus-visible) {
     border-color: var(--white);
 }
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 575px screen
+*/
+
+@media (min-width: 575px) {
+
+    /**
+    * REUSED STYLE
+    */
+
+    .container {
+        max-width: 570px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .slider {
+        --slider-items: 2;
+    }
+
+    /**
+    * BLOG
+    */
+
+    .blog-card .card-content {
+        padding-inline: 32px;
+        gap: 32px;
+    }
+
+    /**
+    * FOOTER
+    */
+
+    .footer-list-title {
+        margin-block-end: 8px;
+    }
+
+}
+
+
+
+
+
+/**
+ * responsive for large than 768px screen
+*/
+
+@media (min-width: 768px) {
+
+    /**
+    * CUSTOM PROPERTY
+    */
+
+    :root {
+
+        /**
+     * typography
+    */
+
+        --fs-2: 6rem;
+        --fs-3: 5.5rem;
+
+    }
+
+    /**
+    * REUSED STYLE
+    */
+
+    .container {
+        max-width: 720px;
+    }
+
+    .title-wrapper {
+        display: flex;
+        gap: 10%;
+    }
+
+    .title-wrapper .section-title {
+        margin-block-end: 0;
+    }
+
+    .title-wrapper .section-text {
+        margin-block-start: 40px;
+    }
+
+    /**
+    * HERO
+    */
+
+    .hero .container {
+        position: relative;
+    }
+
+    .hero-banner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 55%;
+        z-index: -1;
+    }
+
+    .hero-content {
+        width: 50%;
+        margin-left: auto;
+        padding-block: 10%;
+    }
+
+    .hero-title,
+    .hero-subtitle {
+        text-shadow: 2px 2px 0 var(--eerie-black);
+    }
+
+    /**
+    * SKILL
+    */
+
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        gap: 40px;
+    }
+
+    .skills .btn {
+        margin-block-end: 0;
+    }
+
+
+    /**
+    * BLOG
+    */
+
+    .blog-card .card-title {
+        --fs-4: 2.7rem;
+    }
+
+    /**
+    * FOOTER
+    */
+
+    .footer .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+/**
+ * responsive for large than 992 screen
+*/
+
+
+@media (min-width: 992px) {
+
+    /**
+    * CUSTOM PROPERTY
+    */
+
+    :root {
+
+        /**
+     * typography
+     */
+
+        --fs-3: 7rem;
+
+    }
+
+
+
+    /**
+    * REUSED STYLE
+    */
+
+    .container {
+        max-width: 960px;
+    }
+
+    .title-wrapper {
+        gap: 15%;
+    }
+
+    .slider {
+        --slider-items: 3;
+    }
+
+    /**
+    * HERO
+    */
+
+    .hero-subtitle {
+        --fs-8: 1.4rem;
+    }
+
+    /**
+    * SKILL
+    */
+
+    .skills .section-title {
+        max-width: 16ch;
+    }
+
+    .skills-wrapper {
+        gap: 10%;
+    }
+
+    /**
+    * BLOG
+    */
+
+    .blog-card {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .blog-card .card-content {
+        padding: 32px;
+    }
+
+    .blog-list li:nth-child(2n) .card-banner {
+        order: 1;
+    }
+}
+
+/**
+ * responsive for large than 1024px screen
+*/
+
+@media(min-width: 1024px) {
+
+    /**
+    * CUSTOM PROPERTY
+    */
+
+    :root {
+
+        /**
+     * spacing
+    */
+
+        --section-padding: 140px;
+
+    }
+
+
+
+    /**
+    * REUSED STYLE
+    */
+
+    .container {
+        max-width: 1140px;
+    }
+
+    /**
+    * HEADER
+    */
+
+    .navbar {
+        top: 0;
+        display: grid;
+        place-content: center;
+    }
+
+    .nav-toggle-btn {
+        position: relative;
+        z-index: 2;
+    }
+
+    .overlay {
+        top: 0;
+    }
+
+    /**
+    * HERO
+    */
+
+    .hero-content {
+        width: 55%;
+    }
+
+    .hero-title {
+        word-break: normal;
+    }
+
+    .hero .section-text {
+        margin-block-end: 52px;
+    }
+}
